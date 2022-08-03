@@ -1,0 +1,15 @@
+<ion-app>
+    <ion-menu side="end" menuId="first" contentId="main-content">
+        <ion-content>
+            <ion-list id="inbox-list">
+                <ion-list-header>Ristar</ion-list-header>
+                <ion-menu-toggle auto-hide="true" >
+                  <ion-item [routerLink]="['/']"><ion-icon name="home"></ion-icon>Home</ion-item>
+                  <ion-item (click)="logout()"><ion-icon name="log-out"></ion-icon>Logout</ion-item>
+                </ion-menu-toggle>
+            </ion-list>
+
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+</ion-app>
